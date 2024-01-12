@@ -7,14 +7,14 @@ jobs:
     - name: Set up Python 3.9.14
       uses: actions/setup-python@v1
       with:
-        python-version: 3.9.14
+        python-version: 3.10.13
     - name: Install dependencies
       run: |
         make install
     - name: Lint
       run: |
         make lint
-    -name: Test
+    - name: Test
       run: |
         make test
     
